@@ -29,6 +29,7 @@ Real-time system monitor displaying:
 
 - CPU usage with percentage and horizontal bar
 - RAM usage with percentage and horizontal bar
+- GPU usage with percentage and horizontal bar
 - Memory breakdown (used / total in GB)
 
 ### NetStat (`netstat.log`)
