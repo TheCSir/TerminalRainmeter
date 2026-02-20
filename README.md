@@ -43,9 +43,10 @@ Network activity monitor showing:
 
 Now Playing widget with media controls:
 
-- Source indicator (Spotify, WMP, foobar2000, etc.)
+- Source indicator (Spotify, WMP, foobar2000, etc.) + play state
+- Greyscale album art thumbnail
 - Track title and artist
-- 10-band pixel equalizer (AudioLevel FFT)
+- 10-band segmented pixel equalizer (AudioLevel FFT)
 - Progress bar with position / duration
 - Playback controls: previous, play/pause, next
 
