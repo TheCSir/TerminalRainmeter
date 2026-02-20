@@ -43,9 +43,14 @@ Network activity monitor showing:
 
 Now Playing widget with media controls:
 
-- Track title and artist (auto-detects active player)
+- Source indicator (Spotify, WMP, foobar2000, etc.)
+- Track title and artist
+- 10-band pixel equalizer (AudioLevel FFT)
 - Progress bar with position / duration
 - Playback controls: previous, play/pause, next
+
+> Configure the player by editing the `Player` variable in `NowPlaying.ini` (default: `Spotify`).
+> Supported values: `Spotify`, `CAD`, `WMP`, `iTunes`, `WinAmp`, `AIMP`, `foobar2000`
 
 ## Theme
 
