@@ -23,6 +23,30 @@ Power plan quick-switcher with animated expand/collapse. Switch between:
 - **Turbo** — Ultimate performance
 - **Settings** — Opens Windows power settings
 
+### SysMon (`sysmon.exe`)
+
+Real-time system monitor displaying:
+
+- CPU usage with percentage and horizontal bar
+- RAM usage with percentage and horizontal bar
+- Memory breakdown (used / total in GB)
+
+### NetStat (`netstat.log`)
+
+Network activity monitor showing:
+
+- Download speed (KB/s)
+- Upload speed (KB/s)
+- Session totals (RX / TX in MB)
+
+### NowPlaying (`media.pid`)
+
+Now Playing widget with media controls:
+
+- Track title and artist (auto-detects active player)
+- Progress bar with position / duration
+- Playback controls: previous, play/pause, next
+
 ## Theme
 
 All skins share a consistent dark terminal palette:
@@ -42,9 +66,15 @@ All skins share a consistent dark terminal palette:
 TerminalRainmeter/
 ├── Clock/
 │   └── Clock.ini
+├── NetStat/
+│   └── NetStat.ini
+├── NowPlaying/
+│   └── NowPlaying.ini
 ├── PowerOpt/
 │   ├── PowerOpt.ini
 │   └── *.png            # icon & animation assets
+├── SysMon/
+│   └── SysMon.ini
 └── README.md
 ```
 
