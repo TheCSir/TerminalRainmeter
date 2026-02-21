@@ -86,28 +86,22 @@ All skins share a consistent dark terminal palette:
 
 ```
 TerminalRainmeter/
-├── Clock/
-│   ├── RMSKIN.ini
-│   └── Skins/Clock/Clock.ini
-├── NetStat/
-│   ├── RMSKIN.ini
-│   └── Skins/NetStat/NetStat.ini
-├── NowPlaying/
-│   ├── RMSKIN.ini
-│   └── Skins/NowPlaying/NowPlaying.ini
-├── PowerOpt/
-│   ├── RMSKIN.ini
-│   └── Skins/PowerOpt/
-│       ├── PowerOpt.ini
-│       └── *.png
-├── SysMon/
-│   ├── RMSKIN.ini
-│   └── Skins/SysMon/
-│       ├── SysMon.ini
-│       └── GetRAMSpeed.vbs
-├── Weather/
-│   ├── RMSKIN.ini
-│   └── Skins/Weather/Weather.ini
+├── RMSKIN.ini
+├── TerminalRainmeter/
+│   ├── Clock/
+│   │   └── Clock.ini
+│   ├── NetStat/
+│   │   └── NetStat.ini
+│   ├── NowPlaying/
+│   │   └── NowPlaying.ini
+│   ├── PowerOpt/
+│   │   ├── PowerOpt.ini
+│   │   └── *.png
+│   ├── SysMon/
+│   │   ├── SysMon.ini
+│   │   └── GetRAMSpeed.vbs
+│   └── Weather/
+│       └── Weather.ini
 └── README.md
 ```
 
@@ -115,14 +109,6 @@ TerminalRainmeter/
 
 1. Install [Rainmeter](https://www.rainmeter.net/)
 2. Install [JetBrains Mono](https://www.jetbrains.com/lp/mono/) font
-3. Copy the skin folders into your Rainmeter Skins directory (typically `Documents\Rainmeter\Skins\`)
-4. Load the skins from the Rainmeter manager
-
-### Packaging (.rmskin)
-
-Each skin folder is structured for easy packaging. To create an installable .rmskin file:
-
-1. Open a skin folder (e.g. `Clock/`)
-2. Select all contents (`RMSKIN.ini` + `Skins/`)
-3. Compress to ZIP
-4. Rename `.zip` to `.rmskin`
+3. Download the `.rmskin` file from the latest release and double-click to install
+4. Or copy the `TerminalRainmeter/` folder into your Rainmeter Skins directory (typically `Documents\Rainmeter\Skins\`)
+5. Load the skins from the Rainmeter manager
