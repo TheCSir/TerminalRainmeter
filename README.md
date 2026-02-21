@@ -27,10 +27,9 @@ Power plan quick-switcher with animated expand/collapse. Switch between:
 
 Real-time system monitor displaying:
 
-- CPU usage with percentage and horizontal bar
-- RAM usage with percentage and horizontal bar
-- GPU usage with percentage and horizontal bar
-- Memory breakdown (used / total in GB)
+- CPU usage with hardware name, percentage, and horizontal bar
+- RAM usage with DDR type, speed, total GB, percentage, and horizontal bar
+- GPU usage with model name, percentage, and horizontal bar
 
 ### NetStat (`netstat.log`)
 
@@ -53,6 +52,15 @@ Now Playing widget with media controls:
 > Configure the player by editing the `Player` variable in `NowPlaying.ini` (default: `Spotify`).
 > Supported values: `Spotify`, `CAD`, `WMP`, `iTunes`, `WinAmp`, `AIMP`, `foobar2000`
 
+### Weather (`weather.api`)
+
+Live weather widget using wttr.in API:
+
+- Current temperature (large) and condition
+- Feels like temperature and city name
+- High / Low temperatures
+- Humidity and wind speed
+
 ## Theme
 
 All skins share a consistent dark terminal palette:
@@ -71,16 +79,27 @@ All skins share a consistent dark terminal palette:
 ```
 TerminalRainmeter/
 ├── Clock/
-│   └── Clock.ini
+│   ├── RMSKIN.ini
+│   └── Skins/Clock/Clock.ini
 ├── NetStat/
-│   └── NetStat.ini
+│   ├── RMSKIN.ini
+│   └── Skins/NetStat/NetStat.ini
 ├── NowPlaying/
-│   └── NowPlaying.ini
+│   ├── RMSKIN.ini
+│   └── Skins/NowPlaying/NowPlaying.ini
 ├── PowerOpt/
-│   ├── PowerOpt.ini
-│   └── *.png            # icon & animation assets
+│   ├── RMSKIN.ini
+│   └── Skins/PowerOpt/
+│       ├── PowerOpt.ini
+│       └── *.png
 ├── SysMon/
-│   └── SysMon.ini
+│   ├── RMSKIN.ini
+│   └── Skins/SysMon/
+│       ├── SysMon.ini
+│       └── GetRAMSpeed.vbs
+├── Weather/
+│   ├── RMSKIN.ini
+│   └── Skins/Weather/Weather.ini
 └── README.md
 ```
 
@@ -90,3 +109,12 @@ TerminalRainmeter/
 2. Install [JetBrains Mono](https://www.jetbrains.com/lp/mono/) font
 3. Copy the skin folders into your Rainmeter Skins directory (typically `Documents\Rainmeter\Skins\`)
 4. Load the skins from the Rainmeter manager
+
+### Packaging (.rmskin)
+
+Each skin folder is structured for easy packaging. To create an installable .rmskin file:
+
+1. Open a skin folder (e.g. `Clock/`)
+2. Select all contents (`RMSKIN.ini` + `Skins/`)
+3. Compress to ZIP
+4. Rename `.zip` to `.rmskin`

@@ -1,0 +1,8 @@
+# Built packages
+*.rmskin
+
+# Generated files
+raminfo.txt
+
+# Editor settings
+.vscode/
