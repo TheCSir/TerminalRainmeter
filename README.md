@@ -2,6 +2,14 @@
 
 A collection of Rainmeter skins with a unified terminal/hacker aesthetic. Dark theme, monospace fonts, TUI-style borders — designed to match the TerminalStart look.
 
+## Screenshots
+
+![Desktop](ScreenShots/Desktop.png)
+
+![All skins](ScreenShots/List.png)
+
+![YOur Own layout](ScreenShots/Grid.png)
+
 ## Skins
 
 ### Clock (`clock.sys`)
